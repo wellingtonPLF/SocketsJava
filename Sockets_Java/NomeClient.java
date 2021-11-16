@@ -17,7 +17,7 @@ public class NomeClient {
 	public static void main(String[] args)  {
 		try {
 			// this could be changed to an IP name or address other than the localhost
-			Socket servidorSock = new Socket("127.0.0.1",6013);
+			Socket servidorSock = new Socket("192.168.0.183",6013);
 			InputStream in = servidorSock.getInputStream();
 			BufferedReader bin = new BufferedReader(new InputStreamReader(in));
 
